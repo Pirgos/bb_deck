@@ -7,9 +7,9 @@
 // :include: //link[@rel="stylesheet"] | //body/script | //div[@class="slides"]
 // :header_footer:
 
-//:author: Szymon Rogalski
-//:version: v. 0.1
-//:date: 2019-03-12
+:author: Szymon Rogalski
+:version: v. 0.1
+:date: 2019-007-28
 
 :example-caption!:
 :imagesdir: images
