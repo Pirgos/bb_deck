@@ -1,0 +1,44 @@
+// .image
+// .theme-custom
+// .images-data-background-new
+// .subtitle
+// todo info 
+// :include: //div[@class="slides"]
+// :include: //link[@rel="stylesheet"] | //body/script | //div[@class="slides"]
+// :header_footer:
+
+//:author: Szymon Rogalski
+//:version: v. 0.1
+//:date: 2019-03-12
+
+:example-caption!:
+:imagesdir: images
+:backend: revealjs
+:customcss: ./css/theme-custom.css
+:title-slide-background-image: title.jpg
+:title-slide-transition: zoom
+:title-slide-transition-speed: fast
+
+:data-slide-background-image: slide.png
+    
+= BB
+
+// +++<small>+++
+// autor: {author}
+// wersja: {version}
+// data: {date}
+// +++</small>+++
+
+== Agenda
+todo: 
+
+=== Ja i dokumentacja
+
+[%notitle]
+=== Ja i dokumentacja
+
+image::dunning-kruger-effect.png[width=800px]
+
+// +++<small>+++
+// źródło: respectfulinsolence.com
+// +++</small>+++
