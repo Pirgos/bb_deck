@@ -8,18 +8,16 @@
 :customcss: ./css/theme-custom.css
 :title-slide-background-image: title.jpg
 :title-slide-transition: zoom
-:title-slide-transition-speed: fast
+:title-slide-transition-speed: slow
 
 :data-slide-background-image: slide.png
     
-= Brownbag 
-
-Dokumentacja pisana tekstem
+= Brownbag: Dokumentacja pisana tekstem
 
 == Agenda
 todo: 
 
-== Ja i dokumentacja
+== Moje doświadczenia
 
 image::dunning-kruger-effect.png[width=800px]
 
@@ -27,5 +25,47 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
+=== Moje doświadczenia 
+Brak dokumentacji lub bezwartościowa.
 
+image::g&p_new_developer.jpg[role=right,width=350px]
+
+=== Moje doświadczenia
+Archeologia 
+
+image::indiana.jpg[alt text,width=400px]
+
++++<small>+++
+źródło: Raiders of the Lost Ark (1981)
++++<small>+++
+
+
+[.notes]
+****
+* przykładowy scenariusz:
+* 1 system miał inicjalną wersję dokumentacji 
+* 2 był zmieniany poprzez kolejne wkłady projektowe
+* 3 by mieć obraz trzeba prześledzić całą historię zmian
+****
+
+=== Moje doświadczenia
+Generowanie dodmentacji na podstawie kodu źródłowego 
+
+image::night_king.gif[alt text,width=400px]
+
+
+[%step]
+przykład: 
+    "Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
+    to do pola ASN wstawiana jest odpowiednio sformatowana wartość r->oaddr 
+    z doklejonymi na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”."
+
++++<small>+++
+źródło: Game of Thrones
++++<small>+++
+
+[.notes]
+****
+* generowanie dokumentacji 
+****
 

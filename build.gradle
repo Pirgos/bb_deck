@@ -67,6 +67,9 @@ asciidoctor {
         from (downloadDir) {
             include 'reveal.js/**'
         }
+        from (sourceDir) {
+            include 'css/**'
+        }
     }
     backends 'revealjs'
     attributes \
@@ -82,7 +85,7 @@ asciidoctor {
         'idseparator': '-',
         'docinfo1': '',
         'revealjs_theme': 'white',
-        'revealjs_transition': 'linear',
+        'revealjs_transition': 'convex',
         'revealjs_history': 'true',
         'revealjs_slideNumber': 'true'
     options template_dirs: [new File(templateDir,'templates').absolutePath]
