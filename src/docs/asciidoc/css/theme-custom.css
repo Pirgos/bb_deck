@@ -22,12 +22,15 @@
 	font-weight: bold;
 	color: rgb(2, 104, 14);
 }
-
+*/
 .reveal div.paragraph small{
-	margin-top: 20%;
-	color: rgb(61, 141, 161); 
+	/* margin-top: 20%; */
+	color: rgb(61, 141, 161);
+	font-size: 15px; 
+	font-style: italic;
+	align-self: right; 
 }
-
+/*
 .reveal section.topic h2 {
 	margin-top: 2.5em;
 	font-size: 3em;

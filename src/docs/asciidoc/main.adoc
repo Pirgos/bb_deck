@@ -19,13 +19,7 @@ image::slide.png[background, size=contain]
 
 todo: 
 
-
 == Moje doświadczenia
-image::slide.png[background, size=contain]
-
-[%conceal]
-=== Moje doświadczenia - ja i dokumentacja
-image::slide.png[background, size=contain]
 
 image::dunning-kruger-effect.png[width=800px]
 
@@ -33,24 +27,19 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
-[%conceal]
-=== Moje doświadczenia - najczęściej.
-image::slide.png[background, size=contain]
-
+=== Moje doświadczenia 
 Brak dokumentacji lub bezwartościowa.
 
 image::g&p_new_developer.jpg[role=right,width=350px]
 
-[%conceal]
-=== Moje doświadczenia - dokumentacja poprzez projekty
-image::slide.png[background, size=contain]
+=== Moje doświadczenia
 Archeologia 
 
 image::indiana.jpg[alt text,width=400px]
 
 +++<small>+++
 źródło: Raiders of the Lost Ark (1981)
-+++<small>+++
++++</small>+++
 
 
 [.notes]
@@ -61,27 +50,51 @@ image::indiana.jpg[alt text,width=400px]
 * 3 by mieć obraz trzeba prześledzić całą historię zmian
 ****
 
-[%conceal]
-=== Moje doświadczenia - dokumentacja z kodu
-image::slide.png[background, size=contain]
-Generowanie dodmentacji na podstawie kodu źródłowego 
+=== Moje doświadczenia
+Generowanie dokumentacji na podstawie kodu źródłowego
 
-[%step]
 image::night_king.gif[alt text,width=400px]
-
-
-
-przykład: 
-    Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
-    to do pola ASN wstawiana jest odpowiednio sformatowana wartość r->oaddr 
-    z doklejonymi na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 
 +++<small>+++
 źródło: Game of Thrones
++++</small>+++
+
+[.notes]
+****
+* np. nowy dostawca musi udowodnić poprzez dokumentację że rozumie system 
+* programiści odpalają doxygen, javadoc czy sphinx...
+* i mamy REVERSE DOCUMENTATION
+****
+
+=== Moje doświadczenia
+Generowanie dokumentacji na podstawie kodu źródłowego, przykład:
+
++++<blockquote>+++
+Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
+to do pola ASN wstawiana jest odpowiednio sformatowana wartość r->oaddr z doklejonymi 
+na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
++++</blockquote>+++
+
 +++<small>+++
+źródło: todo:
++++</small>+++
 
 [.notes]
 ****
 * generowanie dokumentacji na podstawie kodu (doxygen, sphinx, javadoc) 
 ****
 
+
+== Doświadczenia Innych
+
+=== Doświadczenia developerów
+
+Documentation is...:
+* *S*imply duplication
+* *H*ard to keep up to date
+* *I*nefficient
+* *T*edious
+
++++<small>+++
+https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
++++</small>+++
