@@ -27,11 +27,13 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
+[transition="fade"]
 === Moje doświadczenia 
 Brak dokumentacji lub bezwartościowa.
 
 image::g&p_new_developer.jpg[role=right,width=350px]
 
+[transition="fade"]
 === Moje doświadczenia
 Archeologia 
 
@@ -50,6 +52,7 @@ image::indiana.jpg[alt text,width=400px]
 * 3 by mieć obraz trzeba prześledzić całą historię zmian
 ****
 
+[transition="fade"]
 === Moje doświadczenia
 Generowanie dokumentacji na podstawie kodu źródłowego
 
@@ -66,6 +69,7 @@ image::night_king.gif[alt text,width=400px]
 * i mamy REVERSE DOCUMENTATION
 ****
 
+[transition="fade"]
 === Moje doświadczenia
 Generowanie dokumentacji na podstawie kodu źródłowego, przykład:
 
@@ -90,11 +94,18 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 === Doświadczenia developerów
 
 Documentation is...:
-* *S*imply duplication
-* *H*ard to keep up to date
-* *I*nefficient
-* *T*edious
+
+--
+[%step]
+* Simply duplication
+* Hard to keep up to date
+* Inefficient
+* Tedious
+--
 
 +++<small>+++
-https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
+źródło: https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
 +++</small>+++
+
+
+
