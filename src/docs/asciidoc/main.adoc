@@ -37,7 +37,7 @@ image::indiana.jpg[alt text,width=400px]
 
 +++<small>+++
 źródło: Raiders of the Lost Ark (1981)
-+++<small>+++
++++</small>+++
 
 
 [.notes]
@@ -49,23 +49,36 @@ image::indiana.jpg[alt text,width=400px]
 ****
 
 === Moje doświadczenia
-Generowanie dodmentacji na podstawie kodu źródłowego 
+Generowanie dokumentacji na podstawie kodu źródłowego
 
 image::night_king.gif[alt text,width=400px]
 
-
-[%step]
-przykład: 
-    "Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
-    to do pola ASN wstawiana jest odpowiednio sformatowana wartość r->oaddr 
-    z doklejonymi na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”."
-
 +++<small>+++
 źródło: Game of Thrones
-+++<small>+++
++++</small>+++
 
 [.notes]
 ****
-* generowanie dokumentacji 
+* np. nowy dostawca musi udowodnić poprzez dokumentację że rozumie system 
+* programiści odpalają doxygen, javadoc czy sphinx...
+* i mamy REVERSE DOCUMENTATION
 ****
+
+=== Moje doświadczenia
+Generowanie dokumentacji na podstawie kodu źródłowego, przykład:
+
++++<blockquote>+++
+Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
+to do pola ASN wstawiana jest odpowiednio sformatowana wartość r->oaddr z doklejonymi 
+na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
++++</blockquote>+++
+
++++<small>+++
+źródło: todo:
++++<small>+++
+
+
+
+
+
 
