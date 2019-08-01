@@ -1,0 +1,216 @@
+= Introduction
+ifndef::imagesdir[:imagesdir: images]
+
+== sequence n-5
+
+[plantuml, doc_seq_tworzenie, format="png"]
+....
+
+actor Ja
+collections Publikacja
+    activate Ja
+    Ja -> Ja: tworzenie
+    Ja -> Publikacja ** : gotowe
+    deactivate Ja
+....
+
+== sequence n-4
+
+[plantuml, doc_seq_laczenie, format="png"]
+....
+
+actor Kolega
+actor Ja
+collections Publikacja
+
+    activate Ja
+    Ja -> Ja: tworzenie
+
+    Kolega -> Ja: poprawki
+
+    Ja -> Ja: łączymy
+    Ja -> Publikacja ** : gotowe
+    deactivate Ja
+
+....
+
+
+== sequence n-3
+
+[plantuml, doc_seq_kontrola, format="png"]
+....
+
+actor Kolega
+actor Ja
+actor Kontroler
+collections Publikacja
+
+loop 
+    activate Ja
+    Ja -> Ja: tworzenie
+
+    Kolega -> Ja: poprawki
+
+    Ja -> Ja: łączymy
+    Ja -> Publikacja ** : gotowe
+    deactivate Ja
+
+activate Kontroler
+Publikacja -> Kontroler : weryfikacja
+activate Kontroler
+Kontroler -> Ja : reakcja (gratulacje)
+deactivate Kontroler
+end
+....
+
+== sequence n-2
+
+[plantuml, doc_seq_archiwum, format="png"]
+....
+
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+actor Kolega
+actor Ja
+database Archiwum
+actor Wydawca
+collections Publikacja
+
+box "tworzenie"
+participant Kolega
+participant Ja
+end box
+
+box "publikowanie"
+participant Archiwum
+participant Wydawca
+participant Publikacja
+end box
+
+loop 
+    activate Ja
+    Ja -> Ja: tworzenie
+
+    Kolega -> Ja: poprawki
+
+    Ja -> Ja: łączymy
+    Ja -> Archiwum: wersjonowanie
+    deactivate Ja
+end
+
+activate Wydawca
+Wydawca -> Archiwum: << wybieramy wersję >>
+Archiwum --> Wydawca  : wersja V.xxx
+Wydawca -> Publikacja ** : gotowe
+deactivate Wydawca
+....
+
+== sequence n-1
+
+[plantuml, doc_seq_wydawanie, format="png"]
+....
+
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+actor Kolega
+actor Ja
+database Archiwum
+actor Wydawca
+collections Publikacja
+
+box "tworzenie"
+participant Kolega
+participant Ja
+end box
+
+box "publikowanie"
+participant Archiwum
+participant Wydawca
+participant Publikacja
+end box
+
+== tworzenie ==
+
+loop 
+    activate Ja
+    Ja -> Ja: tworzenie
+
+    Kolega -> Ja: poprawki
+
+    Ja -> Ja: łączymy
+    Ja -> Archiwum: wersjonowanie
+    deactivate Ja
+end
+== publikowanie ==
+
+activate Wydawca
+Wydawca -> Archiwum: << wybieramy wersję >>
+Archiwum --> Wydawca  : wersja V.xxx
+Wydawca -> Publikacja ** : gotowe
+deactivate Wydawca
+....
+
+== sequence n
+
+[plantuml, doc_seq_final, format="png"]
+....
+
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+
+actor Kolega
+actor Ja
+actor Cenzor
+database Archiwum
+actor Wydawca
+collections Publikacja
+
+box "tworzenie"
+participant Kolega
+participant Ja
+end box
+
+box "redagowanie"
+participant Cenzor
+participant Archiwum
+end box
+
+box "publikowanie"
+participant Wydawca
+participant Publikacja
+end box
+
+== tworzenie ==
+
+loop 
+    activate Ja
+    Ja -> Ja: tworzenie
+
+    Kolega -> Ja: poprawki
+
+    Ja -> Ja: łączymy
+
+    == redagowanie ==
+    Ja -> Cenzor: Prośba o akceptację
+    deactivate Ja
+    activate Cenzor
+    alt pozytywna 
+        Cenzor -> Archiwum: wersjonowanie
+        Cenzor -> Ja: ok
+    else negatywna
+        Cenzor -[#red]---> Ja: popraw
+    end
+    deactivate Cenzor
+end
+== publikowanie ==
+
+Wydawca -> Archiwum: << wybieramy wersję >>
+activate Wydawca
+Archiwum --> Wydawca  : wersja V.xxx
+
+Wydawca -> Publikacja ** : gotowe
+deactivate Wydawca
+....
+

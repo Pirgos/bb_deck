@@ -164,8 +164,6 @@ Documentation is...:
 ****
 
 
-
-
 === Jaka powinna być dokumentacja
 
 * łatwa w przeszukiwaniu

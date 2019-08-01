@@ -31,6 +31,7 @@ repositories {
 dependencies {
     gems 'rubygems:slim:3.0.8'
     gems 'rubygems:thread_safe:0.3.5'
+    gems 'rubygems:asciidoctor-diagram:1.5.10'
 }
 
 task download {
@@ -55,8 +56,39 @@ asciidoctorj {
   version = '1.5.5'
 }
 
+
+task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
+    dependsOn jrubyPrepare
+    sources {
+        include 'graph_flow.adoc'
+    }
+    separateOutputDirs false
+    requires = ['asciidoctor-diagram']
+    gemPath = jrubyPrepare.outputDir
+    attributes \
+        'build-gradle': file('build.gradle'),
+        'source-highlighter' : 'coderay',
+        'imagesdir': 'images',
+        'toc': 'left',
+        'icons': 'font',
+        'setanchors': '',
+        'idprefix': '',
+        'idseparator': '-',
+        'docinfo1': ''
+}
+
+// task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
+//     dependsOn jrubyPrepare
+//     sources {
+//         include 'graph_flow.adoc'
+//     }
+//     separateOutputDirs false
+//     requires = ['asciidoctor-diagram']
+//     gemPath = jrubyPrepare.outputDir
+// }
+
 asciidoctor {
-    dependsOn jrubyPrepare, download
+    dependsOn jrubyPrepare, download, ad_graph
     sources {
         include 'main.adoc'
     }
