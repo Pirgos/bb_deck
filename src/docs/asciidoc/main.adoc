@@ -15,11 +15,9 @@
 = Brownbag: Dokumentacja pisana tekstem
 
 == Agenda
-image::slide.png[background, size=contain]
-
 todo: 
 
-== Moje doświadczenia
+== Moje rozumienie dokumentacji
 
 image::dunning-kruger-effect.png[width=800px]
 
@@ -27,13 +25,56 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
-[transition="fade"]
+=== Czym jest dokument?
+
++++
+<p class="fragment fade-in">treść + forma
++++
+
+
+=== Często ważna jest treść
+
+* scenariusz 
+* faktura
+* poemat
+* ...
+
+image::dilbert_tresc.gif[alt text,width=800px]
+
+
+=== Częściej forma
+
+* ulotka
+* komiks
+* CV
+* ...
+
+image::dilbert_forma.gif[alt text,width=800px]
+
+// == Po co dokumentacja w korporacji?
+
+// +++
+// <p class="fragment fade-in"> dla pieniędzy
+// +++
+
+== (moja) Definicja dokumentacji 
+
+Informacje spisane w określonej formie w celu zwiększenia dochodowości
+
+[.notes]
+****
+* jaki biznes takie dokumenty...
+****
+
+== Moje Doświadczenia
+
+[%notitle]
 === Moje doświadczenia 
 Brak dokumentacji lub bezwartościowa.
 
 image::g&p_new_developer.jpg[role=right,width=350px]
 
-[transition="fade"]
+[%notitle]
 === Moje doświadczenia
 Archeologia 
 
@@ -49,14 +90,15 @@ image::indiana.jpg[alt text,width=400px]
 * przykładowy scenariusz:
 * 1 system miał inicjalną wersję dokumentacji 
 * 2 był zmieniany poprzez kolejne wkłady projektowe
-* 3 by mieć obraz trzeba prześledzić całą historię zmian
+* 3 by mieć obraz trzeba prześledzić całą historię zmian która jest niespójna i rozproszona
 ****
 
-[transition="fade"]
+[%notitle]
 === Moje doświadczenia
 Generowanie dokumentacji na podstawie kodu źródłowego
 
 image::night_king.gif[alt text,width=400px]
+
 
 +++<small>+++
 źródło: Game of Thrones
@@ -64,12 +106,12 @@ image::night_king.gif[alt text,width=400px]
 
 [.notes]
 ****
-* np. nowy dostawca musi udowodnić poprzez dokumentację że rozumie system 
+* np. nowy dostawca musi udowodnić poprzez dokumentację, że rozumie system 
 * programiści odpalają doxygen, javadoc czy sphinx...
 * i mamy REVERSE DOCUMENTATION
 ****
 
-[transition="fade"]
+[transition=fade, %notitle]
 === Moje doświadczenia
 Generowanie dokumentacji na podstawie kodu źródłowego, przykład:
 
@@ -83,12 +125,6 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 źródło: todo:
 +++</small>+++
 
-[.notes]
-****
-* generowanie dokumentacji na podstawie kodu (doxygen, sphinx, javadoc) 
-****
-
-
 == Doświadczenia Innych
 
 === Doświadczenia developerów
@@ -96,16 +132,27 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 Documentation is...:
 
 --
-[%step]
+//[%step]
 * Simply duplication
 * Hard to keep up to date
 * Inefficient
 * Tedious
 --
 
+
 +++<small>+++
 źródło: https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
 +++</small>+++
+
+[.notes]
+****
+* powiela informacje, nie jest aktualna, nieskuteczna i nudna
+****
+
+
+
+
+
 
 
 
