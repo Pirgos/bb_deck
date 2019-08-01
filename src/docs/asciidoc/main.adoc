@@ -125,9 +125,23 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 źródło: todo:
 +++</small>+++
 
-== Doświadczenia Innych
+== Postrzeganie dokumentacji  
 
-=== Doświadczenia developerów
+=== Powszechne (chyba) problemy z dokumentacją
+
+* kosztowna, czasochłonna; koszty przewyższają korzyści
+* pisana przez niekompetentnych ludzi
+* niejasna, lakoniczna
+* niekompletna
+* nieaktualna
+* niedostępna
+* trudna w utrzymaniu (trudno edytowalna)
+
++++<small>+++
+źródło: http://wiki.c2.com/?ProblemsWithDocumentation
++++</small>+++
+
+=== Opinia Programistów
 
 Documentation is...:
 
@@ -152,7 +166,22 @@ Documentation is...:
 
 
 
+=== Jaka powinna być dokumentacja
 
+* łatwa w przeszukiwaniu
+* łatwa w edycji
+* dostępna w różnych formatach (również forma drukowalna)
+* dostępna offline
+* wersjonowalna
+* dająca się scalić
 
+== Jak to osiągnąć?
+
+Traktować dokumentację tak samo jak kod.
+image::code_as_code.gif[alt text,width=400px]
+
++++<small>+++
+źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/#/
++++</small>+++
 
 
