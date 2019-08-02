@@ -31,7 +31,6 @@ image::dunning-kruger-effect.png[width=800px]
 <p class="fragment fade-in">treść + forma
 +++
 
-
 === Często ważna jest treść
 
 * scenariusz 
@@ -61,6 +60,8 @@ image::dilbert_forma.gif[alt text,width=800px]
 
 Informacje spisane w określonej formie w celu zwiększenia dochodowości
 
+image::geek-and-poke-audit-coming.jpg[width=300px]
+
 [.notes]
 ****
 * jaki biznes takie dokumenty...
@@ -84,7 +85,6 @@ image::indiana.jpg[alt text,width=400px]
 źródło: Raiders of the Lost Ark (1981)
 +++</small>+++
 
-
 [.notes]
 ****
 * przykładowy scenariusz:
@@ -98,7 +98,6 @@ image::indiana.jpg[alt text,width=400px]
 Generowanie dokumentacji na podstawie kodu źródłowego
 
 image::night_king.gif[alt text,width=400px]
-
 
 +++<small>+++
 źródło: Game of Thrones
@@ -160,9 +159,8 @@ Documentation is...:
 
 [.notes]
 ****
-* powiela informacje, nie jest aktualna, nieskuteczna i nudna
+* powiela informacje, jest nieaktualna, nieskuteczna i nudna
 ****
-
 
 === Jaka powinna być dokumentacja
 
@@ -173,13 +171,37 @@ Documentation is...:
 * wersjonowalna
 * dająca się scalić
 
-== Jak to osiągnąć?
++++
+<p class="fragment fade-in"> Jak to osiągnąć?
++++
 
-Traktować dokumentację tak samo jak kod.
-image::code_as_code.gif[alt text,width=400px]
+== Krok w tył - jak wygląda cykl życia dokumentu w firmie?
+
+=== TODO dodać diagram sekwencji 
+
+image::06_doc_flow.png[alt text,width=800px]
+
+== Skoro cykl życia wygląda podobnie to traktujmy dokumentację tak samo jak kod.
+
+image::doc_as_code.gif[alt text,width=400px]
 
 +++<small>+++
 źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/#/
 +++</small>+++
 
+== Ale "normalni" ludzie nie lubią kodu!
 
+image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
+
+
+== O języku znaczników
+
+== O ASCIIDOC
+
++++<iframe width="400" height="400" marginheight="0" marginwidth="0" src="./html/src.html">
+  Fallback text here for unsupporting browsers, of which there are scant few.
+</iframe>+++
+
+== Trochę o success story/przykłady użycia
+
+== Podsumowanie

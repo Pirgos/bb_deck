@@ -59,10 +59,12 @@ asciidoctorj {
 
 task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
     dependsOn jrubyPrepare
+    separateOutputDirs false
+    
     sources {
         include 'graph_flow.adoc'
+        include 'html/src.adoc'
     }
-    separateOutputDirs false
     requires = ['asciidoctor-diagram']
     gemPath = jrubyPrepare.outputDir
     attributes \
@@ -77,18 +79,9 @@ task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
         'docinfo1': ''
 }
 
-// task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
-//     dependsOn jrubyPrepare
-//     sources {
-//         include 'graph_flow.adoc'
-//     }
-//     separateOutputDirs false
-//     requires = ['asciidoctor-diagram']
-//     gemPath = jrubyPrepare.outputDir
-// }
-
-asciidoctor {
+task ad_deck (type: org.asciidoctor.gradle.AsciidoctorTask) {
     dependsOn jrubyPrepare, download, ad_graph
+    separateOutputDirs false
     sources {
         include 'main.adoc'
     }
@@ -102,6 +95,13 @@ asciidoctor {
         from (sourceDir) {
             include 'css/**'
         }
+        from (sourceDir) {
+            include 'html/**'
+        }
+                // from('build/asciidoc/asciidoc/adoc_samp') {
+        //     include '*.html'
+        // }
+        // into 'build/asciidoc/adoc_samp'
     }
     backends 'revealjs'
     attributes \
@@ -121,4 +121,20 @@ asciidoctor {
         'revealjs_history': 'true',
         'revealjs_slideNumber': 'true'
     options template_dirs: [new File(templateDir,'templates').absolutePath]
+
 }
+
+task ad_main (type: Copy){
+        dependsOn ad_deck
+
+        // from('build/asciidoc/images') {
+        //     include '*.png'
+        // }
+        // into 'build/asciidoc/revealjs/images'
+
+        // from('build/asciidoc/asciidoc/adoc_samp') {
+        //     include '*.html'
+        // }
+        // into 'build/asciidoc/adoc_samp'
+}
+
