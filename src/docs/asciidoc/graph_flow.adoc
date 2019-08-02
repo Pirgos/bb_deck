@@ -3,7 +3,7 @@ ifndef::imagesdir[:imagesdir: images]
 
 == sequence n-5
 
-[plantuml, doc_seq_tworzenie, format="png"]
+[plantuml, 01_doc_flow, format="png"]
 ....
 
 actor Ja
@@ -16,7 +16,7 @@ collections Publikacja
 
 == sequence n-4
 
-[plantuml, doc_seq_laczenie, format="png"]
+[plantuml, 02_doc_flow, format="png"]
 ....
 
 actor Kolega
@@ -37,7 +37,7 @@ collections Publikacja
 
 == sequence n-3
 
-[plantuml, doc_seq_kontrola, format="png"]
+[plantuml, 03_doc_flow, format="png"]
 ....
 
 actor Kolega
@@ -65,7 +65,7 @@ end
 
 == sequence n-2
 
-[plantuml, doc_seq_archiwum, format="png"]
+[plantuml, 04_doc_flow, format="png"]
 ....
 
 skinparam ParticipantPadding 20
@@ -108,7 +108,7 @@ deactivate Wydawca
 
 == sequence n-1
 
-[plantuml, doc_seq_wydawanie, format="png"]
+[plantuml, 05_doc_flow, format="png"]
 ....
 
 skinparam ParticipantPadding 20
@@ -154,7 +154,7 @@ deactivate Wydawca
 
 == sequence n
 
-[plantuml, doc_seq_final, format="png"]
+[plantuml, 06_doc_flow, format="png"]
 ....
 
 skinparam ParticipantPadding 20
