@@ -121,7 +121,7 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 +++</blockquote>+++
 
 +++<small>+++
-źródło: todo:
+źródło: Dokumentacja techniczna systemów PTK Centertel
 +++</small>+++
 
 == Postrzeganie dokumentacji  
