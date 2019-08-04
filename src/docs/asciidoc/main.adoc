@@ -27,9 +27,10 @@ image::dunning-kruger-effect.png[width=800px]
 
 === Czym jest dokument?
 
-+++
-<p class="fragment fade-in">treść + forma
-+++
+treść + forma
+
+image::dunning-kruger-effect.png[width=800px]
+
 
 === Często ważna jest treść
 
@@ -56,7 +57,7 @@ image::dilbert_forma.gif[alt text,width=800px]
 // <p class="fragment fade-in"> dla pieniędzy
 // +++
 
-== (moja) Definicja dokumentacji 
+== (moja) Definicja dokumentacji w firmie
 
 Informacje spisane w określonej formie w celu zwiększenia dochodowości
 
@@ -181,9 +182,9 @@ Documentation is...:
 
 image::06_doc_flow.png[alt text,width=800px]
 
-== Skoro cykl życia wygląda podobnie to traktujmy dokumentację tak samo jak kod.
+== Traktujmy dokumentację tak samo jak kod.
 
-image::doc_as_code.gif[alt text,width=400px]
+image::doc_as_code.png[alt text,width=400px]
 
 +++<small>+++
 źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/#/

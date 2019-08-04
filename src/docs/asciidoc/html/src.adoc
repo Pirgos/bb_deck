@@ -1,3 +1,7 @@
+:nofooter:
+:last-update-label!:
+
+
 |====
 | Column1 | Column2
 
