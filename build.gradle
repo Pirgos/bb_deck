@@ -63,7 +63,7 @@ task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
     
     sources {
         include 'graph_flow.adoc'
-        include 'html/src.adoc'
+        include 'html/*.adoc'
     }
     requires = ['asciidoctor-diagram']
     gemPath = jrubyPrepare.outputDir
@@ -76,7 +76,10 @@ task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
         'setanchors': '',
         'idprefix': '',
         'idseparator': '-',
-        'docinfo1': ''
+        'docinfo1': '',
+        'includedir': 'html/includes',
+        'nofooter': 'true'
+        //'last-update-label!':
 }
 
 task ad_deck (type: org.asciidoctor.gradle.AsciidoctorTask) {

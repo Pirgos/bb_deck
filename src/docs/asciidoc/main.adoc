@@ -17,7 +17,7 @@
 == Agenda
 todo: 
 
-== Moje rozumienie dokumentacji
+== Ja vs dokumentacja
 
 image::dunning-kruger-effect.png[width=800px]
 
@@ -29,8 +29,7 @@ image::dunning-kruger-effect.png[width=800px]
 
 treść + forma
 
-image::dunning-kruger-effect.png[width=800px]
-
+image::cont_plus_design.png[alt text,width=400px]
 
 === Często ważna jest treść
 
@@ -56,16 +55,17 @@ image::dilbert_forma.gif[alt text,width=800px]
 // +++
 // <p class="fragment fade-in"> dla pieniędzy
 // +++
+// [%notitle]
+// == (moja) Definicja dokumentacji w firmie
+// Dokumentacja firmowa:
+// Informacje spisane w określonej formie w celu zwiększenia dochodowości
 
-== (moja) Definicja dokumentacji w firmie
-
-Informacje spisane w określonej formie w celu zwiększenia dochodowości
-
-image::geek-and-poke-audit-coming.jpg[width=300px]
+// image::geek-and-poke-audit-coming.jpg[width=300px]
 
 [.notes]
 ****
 * jaki biznes takie dokumenty...
+* moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
 ****
 
 == Moje Doświadczenia
@@ -74,7 +74,7 @@ image::geek-and-poke-audit-coming.jpg[width=300px]
 === Moje doświadczenia 
 Brak dokumentacji lub bezwartościowa.
 
-image::g&p_new_developer.jpg[role=right,width=350px]
+image::g&p_new_developer.jpg[alt text,width=350px]
 
 [%notitle]
 === Moje doświadczenia
@@ -111,9 +111,9 @@ image::night_king.gif[alt text,width=400px]
 * i mamy REVERSE DOCUMENTATION
 ****
 
-[transition=fade, %notitle]
+[%notitle, transition=fade]
 === Moje doświadczenia
-Generowanie dokumentacji na podstawie kodu źródłowego, przykład:
+przykład:
 
 +++<blockquote>+++
 Jeśli typRekordu!=MMSMT_CDR i r->oaddr zawiera ciąg znaków: "/TYPE=PLMN", 
@@ -176,15 +176,16 @@ Documentation is...:
 <p class="fragment fade-in"> Jak to osiągnąć?
 +++
 
-== Krok w tył - jak wygląda cykl życia dokumentu w firmie?
+== Jak wygląda cykl życia dokumentu w firmie?
 
+[%notitle]
 === TODO dodać diagram sekwencji 
 
-image::06_doc_flow.png[alt text,width=800px]
+image::06_doc_flow.png[alt text,width=600px]
 
 == Traktujmy dokumentację tak samo jak kod.
 
-image::doc_as_code.png[alt text,width=400px]
+image::doc_as_code.png[alt text,width=600px]
 
 +++<small>+++
 źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/#/
@@ -195,11 +196,26 @@ image::doc_as_code.png[alt text,width=400px]
 image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 
 
-== O języku znaczników
+== Na szczęście są Lightweight Markup Languages
+
+[.notes]
+****
+* kiedyś TeX and LaTeX, potem HTML, XML 
+* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Lightweight Markup Languages, kótre potrafią prostą składnią
+* Zdefiniować treść
+* Nadać strukturę tekstu
+* Opiać układ tekstu
+* Udekorować
+****
+
+
+=== GITHUB i języki znaczników
+
+
 
 == O ASCIIDOC
 
-+++<iframe width="400" height="400" marginheight="0" marginwidth="0" src="./html/src.html">
++++<iframe width="400" height="600" marginheight="0" marginwidth="0" src="./html/src.html">
   Fallback text here for unsupporting browsers, of which there are scant few.
 </iframe>+++
 

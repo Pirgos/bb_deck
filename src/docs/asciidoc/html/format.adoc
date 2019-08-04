@@ -1,0 +1,13 @@
+:nofooter:
+:last-update-label!:
+== Formatted Text
+
+.Bold, Italic, and Monospace
+----
+include::{includedir}/ex-format.adoc[tag=b-bold-italic-mono]
+----
+
+[.result]
+====
+include::{includedir}/ex-format.adoc[tag=b-bold-italic-mono]
+====
