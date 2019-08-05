@@ -1,0 +1,27 @@
+:nofooter:
+:last-update-label!:
+
+.Bloki kodu źródłowego
+[source]
+....
+[source,cobol]
+HELLO * HISTORIC EXAMPLE OF HELLO WORLD IN COBOL
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO.
+       PROCEDURE DIVISION.
+           DISPLAY "HELLO, WORLD".
+           STOP RUN.
+----
+....
+
+[.result]
+====
+[source,cobol]
+HELLO * HISTORIC EXAMPLE OF HELLO WORLD IN COBOL
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO.
+       PROCEDURE DIVISION.
+           DISPLAY "HELLO, WORLD".
+           STOP RUN.
+----
+====

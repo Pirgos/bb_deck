@@ -62,7 +62,7 @@ task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
     separateOutputDirs false
     
     sources {
-        include 'graph_flow.adoc'
+        include '*.adoc'
         include 'html/*.adoc'
     }
     requires = ['asciidoctor-diagram']

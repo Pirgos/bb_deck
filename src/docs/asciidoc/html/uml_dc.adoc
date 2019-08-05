@@ -1,0 +1,21 @@
+:nofooter:
+:last-update-label!:
+
+.Bloki kodu źródłowego
+
+[plantuml, diagram-classes, png]     
+....
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
+[.result]
+====
+image::diagram-classes.png[alt text,width=600px]
+====

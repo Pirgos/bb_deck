@@ -1,0 +1,29 @@
+:nofooter:
+:last-update-label!:
+
+.Bloki kodu źródłowego
+[source]
+....
+[source,java]
+----
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello, World"); //<1>
+   }
+}
+----
+<1> Prints "Hello, World" in the terminal window.
+....
+
+[.result]
+====
+[source,java]
+----
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello, World"); //<1>
+   }
+}
+----
+<1> Prints "Hello, World" in the terminal window.
+====

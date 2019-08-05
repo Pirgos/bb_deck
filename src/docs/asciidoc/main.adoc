@@ -29,6 +29,13 @@ image::dunning-kruger-effect.png[width=800px]
 
 treść + forma
 
+[.notes]
+****
+* dobrze utrzymywać te dwie rzeczy niezależnie
+* firma zmienia logo -> i jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty przegenerować
+* firma potrzebuje zaprezentować w innej formie - to lepiej jak mamy treść osobno
+****
+
 image::cont_plus_design.png[alt text,width=400px]
 
 === Często ważna jest treść
@@ -67,6 +74,7 @@ image::dilbert_forma.gif[alt text,width=800px]
 * jaki biznes takie dokumenty...
 * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
 ****
+
 
 == Moje Doświadczenia
 
@@ -216,67 +224,29 @@ image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 == O ASCIIDOC
 
 [%notitle,background-iframe="./html/sections.html"]
-=== Sekcje 0
+=== Sekcje
 
+[%notitle,background-iframe="./html/paragraph.html"]
+=== Akapity
 
-[%notitle,background-iframe="http://www.onet.pl"]
-=== sekcja 
+[%notitle,background-iframe="./html/lists.html"]
+=== Listy
 
+[%notitle,background-iframe="./html/format.html"]
+=== Formatowanie
 
-//data-background-iframe="https://example.com"}
+[%notitle,background-iframe="./html/tabel.html"]
+=== Tabela
 
-//image::.html/sections.html[background, size=contain]
+[%notitle,background-iframe="./html/source.html"]
+=== Kod
 
-// +++<body style="margin:0px;padding:0px;overflow:hidden">
-//     <iframe src="http://www.onet.pl" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-// </body>+++
+[%notitle,background-iframe="http://plantuml.com/"]
+=== uml
 
-=== Sekcje2 
+== ASCIIDOCTOR
 
-+++<section data-background-iframe="./html/sections.html">
-					<h2>Iframe background</h2>
-  </section>+++
-
-//+++<section data-background-iframe="https://html/sections.html"></section>+++
-
-[%conceal]
-=== Sekcje 
-
-+++<iframe width="100%" height="100%"  marginheight="0" marginwidth="0" src="./html/sections.html">
-   Fallback text here for unsupporting browsers, of which there are scant few.
-  </iframe>+++
-
-[%conceal]
-=== akapity
-
-+++<iframe width="100%" height="100%"  marginheight="0" marginwidth="0" src="./html/paragraph.html">
-  Fallback text here for unsupporting browsers, of which there are scant few.
-</iframe>+++
-
-[%conceal]
-=== listy
-
-+++<iframe width="100%" height="100%"  marginheight="0" marginwidth="0" src="./html/lists.html">
-  Fallback text here for unsupporting browsers, of which there are scant few.
-</iframe>+++
-
-[%conceal]
-=== wyróżnianie 
-
-+++<iframe width="100%" height="100%"  marginheight="0" marginwidth="0" src="./html/format.html">
-  Fallback text here for unsupporting browsers, of which there are scant few.
-</iframe>+++
-
-
-[%notitle]
-=== tabela 
-
-+++<iframe width="100%" height="100%"  marginheight="0" marginwidth="0" src="./html/tabel.html">
-  Fallback text here for unsupporting browsers, of which there are scant few.
-</iframe>+++
-
-
-
+image::asciidoctor.png[alt text,width=600px]
 
 == Trochę o success story/przykłady użycia
 
