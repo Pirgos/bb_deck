@@ -1,13 +1,28 @@
 :nofooter:
 :last-update-label!:
-== Formatted Text
 
-.Bold, Italic, and Monospace
+.Wyróżnianie tekstu
 ----
-include::{includedir}/ex-format.adoc[tag=b-bold-italic-mono]
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
 ----
 
 [.result]
 ====
-include::{includedir}/ex-format.adoc[tag=b-bold-italic-mono]
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
 ====

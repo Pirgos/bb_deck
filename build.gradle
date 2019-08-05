@@ -77,7 +77,7 @@ task ad_graph(type: org.asciidoctor.gradle.AsciidoctorTask) {
         'idprefix': '',
         'idseparator': '-',
         'docinfo1': '',
-        'includedir': 'html/includes',
+        'includedir': 'includes',
         'nofooter': 'true'
         //'last-update-label!':
 }
