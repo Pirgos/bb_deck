@@ -196,7 +196,7 @@ image::06_doc_flow.png[alt text,width=600px]
 image::doc_as_code.png[alt text,width=600px]
 
 +++<small>+++
-źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/#/
+źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/
 +++</small>+++
 
 == Ale "normalni" ludzie nie lubią kodu!
@@ -204,22 +204,39 @@ image::doc_as_code.png[alt text,width=600px]
 image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 
 
-== Na szczęście są Lightweight Markup Languages
+== Na szczęście są Lekkie Jezyków Znaczników
 
 [.notes]
 ****
-* kiedyś TeX and LaTeX, potem HTML, XML 
-* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Lightweight Markup Languages, kótre potrafią prostą składnią
+* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, kótre potrafią prostą składnią
 * Zdefiniować treść
 * Nadać strukturę tekstu
 * Opiać układ tekstu
 * Udekorować
+* kiedyś TeX and LaTeX, potem HTML, XML teraz wiele innych
 ****
 
-
+[%notitle]
 === GITHUB i języki znaczników
 
+Języki znaczników aktualnie wspierane przez GitHub Wiki:
 
+* AsciiDoc
+* Creole 
+* Markdown
+* MediaWiki
+* Org-mode 
+* Pod ("Pod::Pandoc")
+* RDoc 
+* Textile
+* reStructuredText
+
+//data-background-iframe="https://slides.com"
+
+[%notitle,background-iframe="https://github.com/Pirgos/ex_markup_languages"]
+=== przyklady na gitHub
+
+przyklad
 
 == O ASCIIDOC
 
