@@ -191,6 +191,7 @@ Documentation is...:
 
 image::06_doc_flow.png[alt text,width=600px]
 
+[.important-text]
 == Traktujmy dokumentację tak samo jak kod.
 
 image::doc_as_code.png[alt text,width=600px]
@@ -218,8 +219,7 @@ image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 
 [%notitle]
 === GITHUB i języki znaczników
-
-Języki znaczników aktualnie wspierane przez GitHub Wiki:
++++<a href="https://github.com/Pirgos/ex_markup_languages" target="_blank">Języki znaczników wspieane przez GITHUB:</a>+++
 
 * AsciiDoc
 * Creole 
@@ -230,13 +230,6 @@ Języki znaczników aktualnie wspierane przez GitHub Wiki:
 * RDoc 
 * Textile
 * reStructuredText
-
-//data-background-iframe="https://slides.com"
-
-[%notitle,background-iframe="https://github.com/Pirgos/ex_markup_languages"]
-=== przyklady na gitHub
-
-przyklad
 
 == O ASCIIDOC
 
@@ -261,10 +254,44 @@ przyklad
 [%notitle,background-iframe="http://plantuml.com/"]
 === uml
 
+// matematyczne formuły
+
+
 == ASCIIDOCTOR
+
+* ASCIIDOC - składnia
+* ASCIIDOCTOR - parser + narzędzia
+
 
 image::asciidoctor.png[alt text,width=600px]
 
+[%notitle]
+=== ASCIIDOCTOR może konwertować do:
+
+ASCIIDOCTOR może konwertować do:
+
+* HTML5
+* EPUB3
+* PDF
+* DocBook 5 (lub 4.5) 
+* i inne formaty
+
+== Narzędzia
+
+=== docToolchain
+
++++<small>+++
+źródło: https://doctoolchain.github.io/docToolchain
++++</small>+++
+
+image::docToolchain.png[alt text,width=600px]
+
+=== Google: g3doc
+
+https://www.usenix.org/sites/default/files/conference/protected-files/srecon16europe_slides_macnamara.pdf
+
+
+=== 
 == Trochę o success story/przykłady użycia
 
 == Podsumowanie

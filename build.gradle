@@ -99,7 +99,7 @@ task ad_deck (type: org.asciidoctor.gradle.AsciidoctorTask) {
             include 'css/**'
         }
         from (sourceDir) {
-            include 'html/**'
+            include 'html/*.html'
         }
                 // from('build/asciidoc/asciidoc/adoc_samp') {
         //     include '*.html'
