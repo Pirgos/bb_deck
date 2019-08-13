@@ -4,35 +4,27 @@
 .Listy
 ----
 .lista
-* Lorem 
-* ipsum 
+* level 1
+** level 2
+*** level 3
+* level 1
 
 .uporządkowana
 . ala
 . ma
 . kota 
-
-.zagnieżdżona
-* level 1
-** level 2
-*** level 3
-* level 1
 ----
 
 [.result]
 ====
 .lista
-* Lorem 
-* ipsum 
+* level 1
+** level 2
+*** level 3
+* level 1
 
 .uporządkowana
 . ala
 . ma
 . kota 
-
-.zagnieżdżona
-* level 1
-** level 2
-*** level 3
-* level 1
 ====

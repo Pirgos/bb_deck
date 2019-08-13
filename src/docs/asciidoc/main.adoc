@@ -17,7 +17,7 @@
 == Agenda
 todo: 
 
-== Ja vs dokumentacja
+== Ja i dokumentacja
 
 image::dunning-kruger-effect.png[width=800px]
 
@@ -25,20 +25,18 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
-=== Czym jest dokument?
+== Dokument to
 
 treść + forma
 
 [.notes]
 ****
 * dobrze utrzymywać te dwie rzeczy niezależnie
-* firma zmienia logo -> i jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty przegenerować
-* firma potrzebuje zaprezentować w innej formie - to lepiej jak mamy treść osobno
 ****
 
 image::cont_plus_design.png[alt text,width=400px]
 
-=== Często ważna jest treść
+=== Ważna jest treść
 
 * scenariusz 
 * faktura
@@ -47,15 +45,25 @@ image::cont_plus_design.png[alt text,width=400px]
 
 image::dilbert_tresc.gif[alt text,width=800px]
 
+[.notes]
+****
+* firma potrzebuje zaprezentować w innej formie - lepiej jak treść osobno
+****
 
-=== Częściej forma
+=== Częściej jednak forma
 
 * ulotka
-* komiks
+* prezentacja
 * CV
 * ...
 
 image::dilbert_forma.gif[alt text,width=800px]
+
+[.notes]
+****
+* jeżeli firma zmienia logo to jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty wygenerować ponownie 
+****
+
 
 // == Po co dokumentacja w korporacji?
 
@@ -74,6 +82,8 @@ image::dilbert_forma.gif[alt text,width=800px]
 * jaki biznes takie dokumenty...
 * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
 ****
+
+
 
 
 == Moje Doświadczenia
@@ -161,7 +171,6 @@ Documentation is...:
 * Tedious
 --
 
-
 +++<small>+++
 źródło: https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
 +++</small>+++
@@ -169,7 +178,18 @@ Documentation is...:
 [.notes]
 ****
 * powiela informacje, jest nieaktualna, nieskuteczna i nudna
+* wymówki:
+* Dobrze napisany kod nie potrzebuje dokumentacji
+* Manifest Agile - jedno z przykazań: "`_Working software over Comprehensive documentation_`"
 ****
+
+[%notitle]
+===  
+Przynajmniej niech będzie dokumentacja użytkownika, bo:
+
+Z perspektywy użytkownika 
+jeżeli funkcjonalność jest nie opisana, to nie istnieje.
+Jeżeli funkcjonalność jest udokumentowana niepoprawnie, to znaczy że źle działa.
 
 === Jaka powinna być dokumentacja
 
@@ -180,19 +200,58 @@ Documentation is...:
 * wersjonowalna
 * dająca się scalić
 
-+++
-<p class="fragment fade-in"> Jak to osiągnąć?
-+++
+// +++
+// <p class="fragment fade-in"> Jak to osiągnąć?
+// +++
 
-== Jak wygląda cykl życia dokumentu w firmie?
+== Cykl życia dokumentu w firmie
 
 [%notitle]
-=== TODO dodać diagram sekwencji 
+=== diagram sekwencji 
+image::01_doc_flow.png[alt text,width=600px]
 
+[%notitle]
+=== diagram sekwencji 
+image::02_doc_flow.png[alt text,width=600px]
+
+[%notitle]
+=== diagram sekwencji 
+image::03_doc_flow.png[alt text,width=600px]
+
+[%notitle]
+=== diagram sekwencji 
+image::04_doc_flow.png[alt text,width=600px]
+
+[%notitle]
+=== diagram sekwencji 
+image::05_doc_flow.png[alt text,width=600px]
+
+[%notitle]
+=== diagram sekwencji 
 image::06_doc_flow.png[alt text,width=600px]
 
+[%notitle]
+=== diagram sekwencji 
+image::06_doc_flow.png[alt text,width=600px]
+
+[%notitle]
+=== diagram sekwencji 
+image::06_doc_flow.png[alt text,width=600px]
+
+[.notes]
+****
+show VCS, merge, pull request, release 
+****
+
+
+[%notitle]
+=== diagram sekwencji 
+image::continuous-delivery.jpg[alt text,width=600px]
+
+
 [.important-text]
-== Traktujmy dokumentację tak samo jak kod.
+== Traktujmy dokumentację tak samo jak kod. 
+_filozofia_ "Docs as a code"
 
 image::doc_as_code.png[alt text,width=600px]
 
@@ -200,26 +259,44 @@ image::doc_as_code.png[alt text,width=600px]
 źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/
 +++</small>+++
 
+=== Co oznacza "Docs as a code"
+
+* Pracujemy z czystym tekstem
+* Odkładamy dokumenty w repozytorium kontroli wersji
+* Współpracujemy z innymi w oparciu o repozytorium
+* Automatyczne testy
+* Zautomatyzowany proces budowania i publikacji
+
+[.notes]
+****
+* używamy tego ukochanego IDE co do kodu
+* commitujemy tak samo jak kod (GIT)
+* autom. testy (linki, błędy ort., czy są wymagane pozycje (motto firmy)...)
+* Continuous delivery 
+* Używamy generatorów statycznych stron jak Sphinkx
+****
+
 == Ale "normalni" ludzie nie lubią kodu!
 
 image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 
 
-== Na szczęście są Lekkie Jezyków Znaczników
+== Na szczęście są Lekkie Języki Znaczników
+Lightweight Markup Languages
 
 [.notes]
 ****
-* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, kótre potrafią prostą składnią
+* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, które potrafią prostą składnią
 * Zdefiniować treść
 * Nadać strukturę tekstu
-* Opiać układ tekstu
-* Udekorować
+* Opisać układ tekstu
+* Udekorować do
 * kiedyś TeX and LaTeX, potem HTML, XML teraz wiele innych
 ****
 
 [%notitle]
 === GITHUB i języki znaczników
-+++<a href="https://github.com/Pirgos/ex_markup_languages" target="_blank">Języki znaczników wspieane przez GITHUB:</a>+++
++++<a href="https://github.com/Pirgos/ex_markup_languages" target="_blank">Języki znaczników wspierane przez GITHUB:</a>+++
 
 * AsciiDoc
 * Creole 
@@ -278,20 +355,68 @@ ASCIIDOCTOR może konwertować do:
 
 == Narzędzia
 
+[%notitle]
 === docToolchain
+
+image::docToolchain.png[alt text,width=800px]
 
 +++<small>+++
 źródło: https://doctoolchain.github.io/docToolchain
 +++</small>+++
 
-image::docToolchain.png[alt text,width=600px]
+[.notes]
+****
+open source tool-chain prezentuje jak docs-as-code podejście może być zaimplementowane
+****
 
-=== Google: g3doc
+== Jak Google zmieniło wewnętrzny proces dokumentacji
 
-https://www.usenix.org/sites/default/files/conference/protected-files/srecon16europe_slides_macnamara.pdf
+=== Problemy
+
+* 48% inżynierów Google twierdziło w 2014 że problemy z dokumentacją są problem nr 1
+* Dokumentacja nie istniała, nie można jej było znaleźć i była zła
+
+=== Przemyślenia
++++<blockquote>+++
+Documentation will never be part of
+engineering culture until it is integrated
+into the codebase and workflow.
++++</blockquote>+++
+
+=== Wewnętrzne platforma dokumentacji technicznej: g3doc 
+
+vision: 
++++<blockquote>+++
+"Engineers find, create, and maintain docs using their regular workflow and developer tools"
++++</blockquote>+++
+
+Core principles: 
+* Focus on the engineer
+* Separate presentation from content
+* Keep it drop-dead simple
+
+=== Rezultat
+
+image::g3doc_grow.png[alt text,width=800px]
+
++++<small>+++
+źródło:
+Riona MacNamara - leads Google's Documentation Infrastructure team
+https://www.usenix.org/node/197471 
+https://www.youtube.com/watch?v=EnB8GtPuauw
++++</small>+++
 
 
-=== 
-== Trochę o success story/przykłady użycia
+== Microsoft
+
+[%notitle, background-image="./image/ms_github.jpg"]
+=== github
+
+[%notitle, background-image="./image/ms_web_contributing.jpg"]
+=== web_editing
+
+[%notitle, background-video="https://sec.ch9.ms/ch9/2637/370af848-96aa-49c4-8ffe-cb1753b32637/ModernizingWindowsDocs_high.mp4",background-video-loop=false,background-video-muted=false]
+=== ms video background
 
 == Podsumowanie
+todo
