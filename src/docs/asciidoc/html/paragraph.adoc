@@ -1,7 +1,7 @@
 :nofooter:
 :last-update-label!:
 
-.Akapity/łamani lini
+.Akapity/łamanie lini
 ----
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nisl purus in. Posuere morbi leo urna molestie. 
 

@@ -24,9 +24,16 @@
 }
 */
 
-section.github.background {
-	data-background-iframe: "https://github.com/Pirgos/ex_markup_languages"	
-  }
+html:-webkit-full-screen-ancestor {
+	background: inherit; }
+  
+  html:-moz-full-screen-ancestor {
+	background: inherit; }
+  
+
+body {
+	background: url( '../images/slide.png' );
+}
 
 .reveal div.paragraph small{
 	/* margin-top: 20%; */

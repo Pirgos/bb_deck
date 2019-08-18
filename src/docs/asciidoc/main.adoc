@@ -15,7 +15,12 @@
 = Brownbag: Dokumentacja pisana tekstem
 
 == Agenda
-todo: 
+
+* Kilka truizmów o dokumentacji (opinie, podejście, doświadczenia)
+* Proces wytwórczy dokumentów a cykl wytwórczy oprogramowania
+* filozofia "Docs as a Code"
+* Języki znaczników - AsciiDoc
+* Narzędzia i przykłady zastosowań
 
 == Ja i dokumentacja
 
@@ -25,13 +30,18 @@ image::dunning-kruger-effect.png[width=800px]
 źródło: respectfulinsolence.com
 +++</small>+++
 
+[.notes]
+****
+* trzy słowa o mnie jako ekspercie od dokumentacji
+****
+
 == Dokument to
 
 treść + forma
 
 [.notes]
 ****
-* dobrze utrzymywać te dwie rzeczy niezależnie
+* dobrze rozumieć i utrzymywać te dwie rzeczy niezależnie
 ****
 
 image::cont_plus_design.png[alt text,width=400px]
@@ -47,10 +57,11 @@ image::dilbert_tresc.gif[alt text,width=800px]
 
 [.notes]
 ****
-* firma potrzebuje zaprezentować w innej formie - lepiej jak treść osobno
+* tworzyć treść, i ją formatować to często inne rzeczy 
+* często poza kompetencją jednej osoby, a może i działu
 ****
 
-=== Częściej jednak forma
+=== Częściej forma
 
 * ulotka
 * prezentacja
@@ -61,7 +72,9 @@ image::dilbert_forma.gif[alt text,width=800px]
 
 [.notes]
 ****
-* jeżeli firma zmienia logo to jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty wygenerować ponownie 
+* np.
+* firma zmienia logo to jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty wygenerować ponownie 
+* firma chce archiwizować treść dokumentacji - taniej bez narzutu przeznaczonego dla formy
 ****
 
 
@@ -77,11 +90,11 @@ image::dilbert_forma.gif[alt text,width=800px]
 
 // image::geek-and-poke-audit-coming.jpg[width=300px]
 
-[.notes]
-****
-* jaki biznes takie dokumenty...
-* moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
-****
+// [.notes]
+// ****
+// * jaki biznes takie dokumenty...
+// * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
+// ****
 
 
 
@@ -93,6 +106,12 @@ image::dilbert_forma.gif[alt text,width=800px]
 Brak dokumentacji lub bezwartościowa.
 
 image::g&p_new_developer.jpg[alt text,width=350px]
+
+[.notes]
+****
+* też tak rozumiem pracę konsultanta,
+* z dobrą dokumentacją zatrudniliby programistów...
+****
 
 [%notitle]
 === Moje doświadczenia
@@ -106,17 +125,17 @@ image::indiana.jpg[alt text,width=400px]
 
 [.notes]
 ****
-* przykładowy scenariusz:
+* scenariusz:
 * 1 system miał inicjalną wersję dokumentacji 
 * 2 był zmieniany poprzez kolejne wkłady projektowe
-* 3 by mieć obraz trzeba prześledzić całą historię zmian która jest niespójna i rozproszona
+* 3 by mieć obraz trzeba prześledzić całą historię zmian która jest niespójna i rozproszona 
 ****
 
 [%notitle]
 === Moje doświadczenia
 Generowanie dokumentacji na podstawie kodu źródłowego
 
-image::night_king.gif[alt text,width=400px]
+image::night_king.gif[alt text,width=500px]
 
 +++<small>+++
 źródło: Game of Thrones
@@ -124,8 +143,9 @@ image::night_king.gif[alt text,width=400px]
 
 [.notes]
 ****
-* np. nowy dostawca musi udowodnić poprzez dokumentację, że rozumie system 
-* programiści odpalają doxygen, javadoc czy sphinx...
+* nowy dostawca musi udowodnić że rozumie system 
+* jednym z elementów jest przygotowanie dokumentacji (cookbook) 
+* programiści odpalają doxygen czy javadoc, mamy fajną formę
 * i mamy REVERSE DOCUMENTATION
 ****
 
@@ -145,7 +165,8 @@ na początku cyframi 48 i znakiem F na końcu: „48r->oaddrF”.
 
 == Postrzeganie dokumentacji  
 
-=== Powszechne (chyba) problemy z dokumentacją
+=== Powszechne (chyba) problemy
+dokumentacja jest:
 
 * kosztowna, czasochłonna; koszty przewyższają korzyści
 * pisana przez niekompetentnych ludzi
@@ -183,15 +204,15 @@ Documentation is...:
 * Manifest Agile - jedno z przykazań: "`_Working software over Comprehensive documentation_`"
 ****
 
-[%notitle]
-===  
-Przynajmniej niech będzie dokumentacja użytkownika, bo:
+// [%notitle]
+// === przynajmniej
+// przynajmniej niech będzie dokumentacja użytkownika, bo:
 
-Z perspektywy użytkownika 
-jeżeli funkcjonalność jest nie opisana, to nie istnieje.
-Jeżeli funkcjonalność jest udokumentowana niepoprawnie, to znaczy że źle działa.
+// Z perspektywy użytkownika +
+// jeżeli funkcjonalność jest nie opisana, to nie istnieje. +
+// Jeżeli funkcjonalność jest udokumentowana niepoprawnie, to znaczy że źle działa. +
 
-=== Jaka powinna być dokumentacja
+== Dokumentacja powinna być
 
 * łatwa w przeszukiwaniu
 * łatwa w edycji
@@ -200,69 +221,94 @@ Jeżeli funkcjonalność jest udokumentowana niepoprawnie, to znaczy że źle dz
 * wersjonowalna
 * dająca się scalić
 
-// +++
-// <p class="fragment fade-in"> Jak to osiągnąć?
-// +++
+[.notes]
+****
+Pomijając kwestie merytoryczne to technicznie można założyć
+****
 
-== Cykl życia dokumentu w firmie
-
-[%notitle]
-=== diagram sekwencji 
-image::01_doc_flow.png[alt text,width=600px]
+== Cykl życia dokumentu
 
 [%notitle]
-=== diagram sekwencji 
-image::02_doc_flow.png[alt text,width=600px]
+=== być autorem
+image::01_doc_flow.png[alt text,width=400px]
+
+[.notes]
+****
+* być autorem to znaczy publikować
+****
 
 [%notitle]
-=== diagram sekwencji 
+=== trzeba współpracować
+image::02_doc_flow.png[alt text,width=400px]
+
+[.notes]
+****
+* trzeba współtworzyć, a to oznacza że trzeba scalać pracę 
+****
+
+
+[%notitle]
+=== recenzent 
 image::03_doc_flow.png[alt text,width=600px]
 
+[.notes]
+****
+* potrzebna jest też przestrzeń dla feedbacku - czyli recenzji 
+****
+
 [%notitle]
-=== diagram sekwencji 
+=== archiwum 
 image::04_doc_flow.png[alt text,width=600px]
 
+[.notes]
+****
+* Jeżeli dodamy i archiwum, to możemy mieć funkcję Wydawcy, który decyduje "co idzie na produkcję"  
+****
+
 [%notitle]
-=== diagram sekwencji 
+=== publikacja 
 image::05_doc_flow.png[alt text,width=600px]
 
-[%notitle]
-=== diagram sekwencji 
-image::06_doc_flow.png[alt text,width=600px]
+[.notes]
+****
+* czyli mamy oddzielony proces tworzenia i publikacji
+****
 
 [%notitle]
-=== diagram sekwencji 
-image::06_doc_flow.png[alt text,width=600px]
-
-[%notitle]
-=== diagram sekwencji 
+=== redakcja 
 image::06_doc_flow.png[alt text,width=600px]
 
 [.notes]
 ****
-show VCS, merge, pull request, release 
+* w przedsiębiorstwie trudno sobie wyobrazić ten proces bez kontroli/redakcji
+* w efekcie mamy:
+* merge, pull request, testy, system kontroli wersji, release
+* co łątwo się mapuje na ogólny proces dostarczania oprogramowania w IT 
 ****
 
+// [%notitle]
+// === diagram sekwencji 
+// image::continuous-delivery.jpg[alt text,width=600px]
 
-[%notitle]
-=== diagram sekwencji 
-image::continuous-delivery.jpg[alt text,width=600px]
-
+// [.notes]
+// ****
+// * co łątwo się mapuje na ogólny proces dostarczania oprogramowania w IT
+// ****
 
 [.important-text]
 == Traktujmy dokumentację tak samo jak kod. 
 _filozofia_ "Docs as a code"
 
-image::doc_as_code.png[alt text,width=600px]
+image::doc_as_code.svg[alt text,width=600px]
 
 +++<small>+++
-źródło: https://idratherbewriting.com/docs-as-code-tools-and-workflows/
+źródło: https://idratherbewriting.com
 +++</small>+++
 
 === Co oznacza "Docs as a code"
 
 * Pracujemy z czystym tekstem
-* Odkładamy dokumenty w repozytorium kontroli wersji
+* Odkładamy dokumenty w systemie kontroli wersji
 * Współpracujemy z innymi w oparciu o repozytorium
 * Automatyczne testy
 * Zautomatyzowany proces budowania i publikacji
@@ -270,10 +316,9 @@ image::doc_as_code.png[alt text,width=600px]
 [.notes]
 ****
 * używamy tego ukochanego IDE co do kodu
-* commitujemy tak samo jak kod (GIT)
-* autom. testy (linki, błędy ort., czy są wymagane pozycje (motto firmy)...)
+* archiwizujemy tak samo jak kod (GIT)
+* autom. testy (linki, błędy ort., czy są wymagane pozycje (motto firmy) itp. )
 * Continuous delivery 
-* Używamy generatorów statycznych stron jak Sphinkx
 ****
 
 == Ale "normalni" ludzie nie lubią kodu!
@@ -286,12 +331,12 @@ Lightweight Markup Languages
 
 [.notes]
 ****
-* ale od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, które potrafią prostą składnią
+kiedyś TeX and LaTeX, potem HTML, XML
+od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, które potrafią prostą składnią
 * Zdefiniować treść
 * Nadać strukturę tekstu
 * Opisać układ tekstu
 * Udekorować do
-* kiedyś TeX and LaTeX, potem HTML, XML teraz wiele innych
 ****
 
 [%notitle]
@@ -308,7 +353,20 @@ Lightweight Markup Languages
 * Textile
 * reStructuredText
 
-== O ASCIIDOC
+[.notes]
+****
+Markdown nie jest ustandaryzowany
+kliknąć - pokazać 
+****
+
+
+== ASCIIDOC
++++<blockquote>+++
+Use AsciiDoc for document markup. Really. 
+It’s actually readable by humans, easier to parse and way more flexible than XML.
++++</blockquote>+++
+
+_Linus_ _Torvalds_
 
 [%notitle,background-iframe="./html/sections.html"]
 === Sekcje
@@ -316,31 +374,54 @@ Lightweight Markup Languages
 [%notitle,background-iframe="./html/paragraph.html"]
 === Akapity
 
-[%notitle,background-iframe="./html/lists.html"]
-=== Listy
+// [%notitle,background-iframe="./html/lists.html"]
+// === Listy
 
 [%notitle,background-iframe="./html/format.html"]
 === Formatowanie
 
-[%notitle,background-iframe="./html/tabel.html"]
-=== Tabela
+// [%notitle,background-iframe="./html/tabel.html"]
+// === Tabela
 
 [%notitle,background-iframe="./html/source.html"]
 === Kod
 
-[%notitle,background-iframe="http://plantuml.com/"]
-=== uml
+=== Więcej o ASCIIDOC
 
-// matematyczne formuły
++++<a href="https://ya-webdesign.com/education/powerman-arkusz-kalkulacyjny-asciidoc.html" target="_blank">przykłady...</a>+++
+
+[%notitle]
+=== Edytory
+
+AsciiDoc support for Visual Studio Code:
+
+image::vsc.gif[alt text,width=600px]
+
+// [%notitle]
+// === Edytory
+
+// VIM:
+
+// image::vim.giff[alt text,width=300px]
 
 
-== ASCIIDOCTOR
+=== Przykład dokumentacji w ASCIIDOC
 
-* ASCIIDOC - składnia
-* ASCIIDOCTOR - parser + narzędzia
++++<a href="http://docs.groovy-lang.org/next/html/documentation/" target="_blank">Groovy Language Documentation</a>+++
+
+=== ASCIIDOCTOR
+
+* parser 
+* narzędzia
+
+[.notes]
+****
+ASCIIDOC tylko składnia
+****
 
 
-image::asciidoctor.png[alt text,width=600px]
+
+//image::asciidoctor.png[alt text,width=600px]
 
 [%notitle]
 === ASCIIDOCTOR może konwertować do:
@@ -353,10 +434,32 @@ ASCIIDOCTOR może konwertować do:
 * DocBook 5 (lub 4.5) 
 * i inne formaty
 
-== Narzędzia
+=== Przykłady
+TODO
+
+//todo przykłady grafów, plantuml, 
+
+== ANTORA 
+
+open source multi-repo static site generator
+
+[%notitle,background-iframe="https://antora.org/"]
+=== Antora
+
+=== Przykład dokumentacji opartej na Antora
+ 
++++<a href="https://docs.fedoraproject.org/en-US/docs/" target="_blank">Fedora Documentation</a>+++
+
+[.notes]
+****
+kliknąć - w edycję 
+****
+
+
+== docToolchain 
 
 [%notitle]
-=== docToolchain
+=== docToolchain 
 
 image::docToolchain.png[alt text,width=800px]
 
@@ -367,56 +470,89 @@ image::docToolchain.png[alt text,width=800px]
 [.notes]
 ****
 open source tool-chain prezentuje jak docs-as-code podejście może być zaimplementowane
+używa TOMTOM
 ****
 
-== Jak Google zmieniło wewnętrzny proces dokumentacji
+== Microsoft 
+ 
+[%notitle, background-image="./images/ms_github.gif"]
+=== github
 
-=== Problemy
+[.notes]
+****
+też zaimplementowali  podejście "dos as a code", w oparciu o github
+****
 
-* 48% inżynierów Google twierdziło w 2014 że problemy z dokumentacją są problem nr 1
-* Dokumentacja nie istniała, nie można jej było znaleźć i była zła
+[%notitle, background-image="./images/ms_net-apib.gif"]
+=== web_editing
 
-=== Przemyślenia
-+++<blockquote>+++
-Documentation will never be part of
-engineering culture until it is integrated
-into the codebase and workflow.
-+++</blockquote>+++
+[.notes]
+****
+migration of all .NET Framework documentation in 11 locales from MSDN to docs.microsoft.com
+****
 
-=== Wewnętrzne platforma dokumentacji technicznej: g3doc 
 
-vision: 
-+++<blockquote>+++
-"Engineers find, create, and maintain docs using their regular workflow and developer tools"
-+++</blockquote>+++
+[%notitle, background-video="https://sec.ch9.ms/ch9/2637/370af848-96aa-49c4-8ffe-cb1753b32637/ModernizingWindowsDocs_high.mp4",background-video-loop=false,background-video-muted=false]
+=== ms video background
+[.notes]
+****
+Film prezentujący jak to wygląda w praktyce
+****
 
+
+== Google też zmieniło wewnętrzny proces dokumentacji
+
++++<small>+++
+źródło: Riona MacNamara - leads Google's Documentation Infrastructure team
++++<br>
+https://www.usenix.org/node/197471
++++</small>+++
+
+=== Problem
+
+image::google_48.png[alt text,width=800px]
+
+[.notes]
+****
+48% inżynierów Google twierdziło w 2014 roku, że problemy z dokumentacją są problem nr 1
+****
+
+=== Wizja
+
+image::google_vision.png[alt text,width=800px]
+
+[.notes]
+****
+Stworzyć narzędzie dokumentacyjne bliskie inżynierom 
+****
+
+
+=== Rezultat
+
+image::google_g3doc.png[alt text,width=800px]
+
+[.notes]
+****
+oparte na Markdown
+renderowane do HTML
 Core principles: 
 * Focus on the engineer
 * Separate presentation from content
 * Keep it drop-dead simple
+****
 
-=== Rezultat
+=== SUKCES!!!
 
-image::g3doc_grow.png[alt text,width=800px]
+image::google_stats.png[alt text,width=800px]
 
-+++<small>+++
-źródło:
-Riona MacNamara - leads Google's Documentation Infrastructure team
-https://www.usenix.org/node/197471 
-https://www.youtube.com/watch?v=EnB8GtPuauw
-+++</small>+++
+== Linki
 
+* https://www.docslikecode.com/
+* https://www.writethedocs.org
+* http://asciidoc.org/
+* https://doctoolchain.github.io/docToolchain/
+* https://antora.org/
 
-== Microsoft
-
-[%notitle, background-image="./image/ms_github.jpg"]
-=== github
-
-[%notitle, background-image="./image/ms_web_contributing.jpg"]
-=== web_editing
-
-[%notitle, background-video="https://sec.ch9.ms/ch9/2637/370af848-96aa-49c4-8ffe-cb1753b32637/ModernizingWindowsDocs_high.mp4",background-video-loop=false,background-video-muted=false]
-=== ms video background
 
 == Podsumowanie
 todo

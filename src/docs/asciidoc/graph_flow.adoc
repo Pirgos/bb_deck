@@ -42,7 +42,7 @@ collections Publikacja
 
 actor Kolega
 actor Ja
-actor Kontroler
+actor Recenzent
 collections Publikacja
 
 loop 
@@ -55,11 +55,11 @@ loop
     Ja -> Publikacja ** : gotowe
     deactivate Ja
 
-activate Kontroler
-Publikacja -> Kontroler : weryfikacja
-activate Kontroler
-Kontroler -> Ja : reakcja (gratulacje)
-deactivate Kontroler
+activate Recenzent
+Publikacja -> Recenzent : weryfikacja
+activate Recenzent
+Recenzent -> Ja : reakcja (gratulacje)
+deactivate Recenzent
 end
 ....
 
