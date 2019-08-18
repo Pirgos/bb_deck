@@ -17,23 +17,23 @@
 == Agenda
 
 * Kilka truizmów o dokumentacji (opinie, podejście, doświadczenia)
-* Proces wytwórczy dokumentów a cykl wytwórczy oprogramowania
+* Proces wytwórczy dokumentów vs cykl wytwórczy oprogramowania
 * filozofia "Docs as a Code"
 * Języki znaczników - AsciiDoc
 * Narzędzia i przykłady zastosowań
 
-== Ja i dokumentacja
+// == Ja i dokumentacja
 
-image::dunning-kruger-effect.png[width=800px]
+// image::dunning-kruger-effect.png[width=800px]
 
-+++<small>+++
-źródło: respectfulinsolence.com
-+++</small>+++
+// +++<small>+++
+// źródło: respectfulinsolence.com
+// +++</small>+++
 
-[.notes]
-****
-* trzy słowa o mnie jako ekspercie od dokumentacji
-****
+// [.notes]
+// ****
+// * trzy słowa o mnie jako ekspercie od dokumentacji
+// ****
 
 == Dokument to
 
@@ -42,41 +42,19 @@ treść + forma
 [.notes]
 ****
 * dobrze rozumieć i utrzymywać te dwie rzeczy niezależnie
+* bo często zajmują się tym inni ludzie
+* i dobrze jak ktoś kto tworzy treść nie przejmuje się "formatowaniem"
+* i odwrotnie...
 ****
 
 image::cont_plus_design.png[alt text,width=400px]
 
-=== Ważna jest treść
+//=== Treść 
 
-* scenariusz 
-* faktura
-* poemat
-* ...
+//Ważna jest treść
+//* ...
 
-image::dilbert_tresc.gif[alt text,width=800px]
-
-[.notes]
-****
-* tworzyć treść, i ją formatować to często inne rzeczy 
-* często poza kompetencją jednej osoby, a może i działu
-****
-
-=== Częściej forma
-
-* ulotka
-* prezentacja
-* CV
-* ...
-
-image::dilbert_forma.gif[alt text,width=800px]
-
-[.notes]
-****
-* np.
-* firma zmienia logo to jeżeli mamy formę prezentacji wydzieloną to możemy tanio dokumenty wygenerować ponownie 
-* firma chce archiwizować treść dokumentacji - taniej bez narzutu przeznaczonego dla formy
-****
-
+//image::dilbert_tresc.gif[alt text,width=800px]
 
 // == Po co dokumentacja w korporacji?
 
@@ -95,7 +73,6 @@ image::dilbert_forma.gif[alt text,width=800px]
 // * jaki biznes takie dokumenty...
 // * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
 // ****
-
 
 
 
@@ -212,20 +189,6 @@ Documentation is...:
 // jeżeli funkcjonalność jest nie opisana, to nie istnieje. +
 // Jeżeli funkcjonalność jest udokumentowana niepoprawnie, to znaczy że źle działa. +
 
-== Dokumentacja powinna być
-
-* łatwa w przeszukiwaniu
-* łatwa w edycji
-* dostępna w różnych formatach (również forma drukowalna)
-* dostępna offline
-* wersjonowalna
-* dająca się scalić
-
-[.notes]
-****
-Pomijając kwestie merytoryczne to technicznie można założyć
-****
-
 == Cykl życia dokumentu
 
 [%notitle]
@@ -326,7 +289,7 @@ image::doc_as_code.svg[alt text,width=600px]
 image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 
 
-== Na szczęście są Lekkie Języki Znaczników
+== Lekkie Języki Znaczników
 Lightweight Markup Languages
 
 [.notes]
@@ -439,22 +402,6 @@ TODO
 
 //todo przykłady grafów, plantuml, 
 
-== ANTORA 
-
-open source multi-repo static site generator
-
-[%notitle,background-iframe="https://antora.org/"]
-=== Antora
-
-=== Przykład dokumentacji opartej na Antora
- 
-+++<a href="https://docs.fedoraproject.org/en-US/docs/" target="_blank">Fedora Documentation</a>+++
-
-[.notes]
-****
-kliknąć - w edycję 
-****
-
 
 == docToolchain 
 
@@ -473,23 +420,50 @@ open source tool-chain prezentuje jak docs-as-code podejście może być zaimple
 używa TOMTOM
 ****
 
-== Microsoft 
+
+
+== ANTORA 
+
+open source multi-repo static site generator
+
+[%notitle,background-iframe="https://antora.org/"]
+=== Antora
+
+=== Przykład dokumentacji opartej na Antora
  
-[%notitle, background-image="./images/ms_github.gif"]
++++<a href="https://docs.fedoraproject.org/en-US/docs/" target="_blank">Fedora Documentation</a>+++
+
+[.notes]
+****
+kliknąć - w edycję 
+****
+
+== Microsoft - docs.microsoft.com
+
+[%notitle]
 === github
+
+w oparciu o GitHub:
+
+image::ms_github.gif[alt text,width=600px]
 
 [.notes]
 ****
 też zaimplementowali  podejście "dos as a code", w oparciu o github
+migration of all .NET Framework documentation from MSDN to docs.microsoft.com
 ****
 
-[%notitle, background-image="./images/ms_net-apib.gif"]
-=== web_editing
+// [%notitle]
+// === web_editing
 
-[.notes]
-****
-migration of all .NET Framework documentation in 11 locales from MSDN to docs.microsoft.com
-****
+// wykonali migrację dokumentacji .NET Framework z MSDN do docs.microsoft.com
+
+// image::ms_net-apib.gif[alt text,width=600px]
+
+// [.notes]
+// ****
+
+// ****
 
 
 [%notitle, background-video="https://sec.ch9.ms/ch9/2637/370af848-96aa-49c4-8ffe-cb1753b32637/ModernizingWindowsDocs_high.mp4",background-video-loop=false,background-video-muted=false]
@@ -500,11 +474,11 @@ Film prezentujący jak to wygląda w praktyce
 ****
 
 
-== Google też zmieniło wewnętrzny proces dokumentacji
+== Google - success story 
 
 +++<small>+++
 źródło: Riona MacNamara - leads Google's Documentation Infrastructure team
-+++<br>
++++<br>+++
 https://www.usenix.org/node/197471
 +++</small>+++
 
@@ -545,6 +519,31 @@ Core principles:
 
 image::google_stats.png[alt text,width=800px]
 
+== Podsumowanie
+
+[%notitle]
+=== korzyści
+korzyści techniczne:
+
+* łatwa w przeszukiwaniu
+* łatwa w edycji
+* dostępna w różnych formatach (również forma drukowalna)
+* dostępna offline
+* wersjonowalna
+* dająca się łatwo scalić
+
+[.notes]
+****
+Pomijając kwestie merytoryczne to technicznie można założyć
+****
+
+[%notitle]
+=== które kształtują świadomość
+narzędzia kształtują świadomość...
+
+
+
+
 == Linki
 
 * https://www.docslikecode.com/
@@ -552,7 +551,3 @@ image::google_stats.png[alt text,width=800px]
 * http://asciidoc.org/
 * https://doctoolchain.github.io/docToolchain/
 * https://antora.org/
-
-
-== Podsumowanie
-todo
