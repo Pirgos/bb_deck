@@ -16,11 +16,12 @@
 
 == Agenda
 
-* Kilka truizmów o dokumentacji (opinie, podejście, doświadczenia)
+* Kilka truizmów o dokumentacji 
 * Proces wytwórczy dokumentów vs cykl wytwórczy oprogramowania
 * filozofia "Docs as a Code"
 * Języki znaczników - AsciiDoc
 * Narzędzia i przykłady zastosowań
+* Podsumowanie
 
 // == Ja i dokumentacja
 
@@ -73,8 +74,6 @@ image::cont_plus_design.png[alt text,width=400px]
 // * jaki biznes takie dokumenty...
 // * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
 // ****
-
-
 
 == Moje Doświadczenia
 
@@ -294,8 +293,8 @@ Lightweight Markup Languages
 
 [.notes]
 ****
-kiedyś TeX and LaTeX, potem HTML, XML
-od jakiegoś czasu dostępne sa Lekkie odmiany: Markup Languages, które potrafią prostą składnią
+* kiedyś TeX and LaTeX, potem HTML, XML
+* potrafią:
 * Zdefiniować treść
 * Nadać strukturę tekstu
 * Opisać układ tekstu
@@ -541,8 +540,7 @@ Pomijając kwestie merytoryczne to technicznie można założyć
 === które kształtują świadomość
 narzędzia kształtują świadomość...
 
-
-
+First tooling, then culture
 
 == Linki
 
