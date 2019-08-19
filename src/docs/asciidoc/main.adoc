@@ -22,78 +22,15 @@
 ****
 
 == Agenda
-
-* Kilka truizmów o dokumentacji 
-* Proces wytwórczy dokumentów vs cykl wytwórczy oprogramowania
-* filozofia "Docs as a Code"
+ 
+* Dokumentacja - moje doświadczenia
+* Cykl życia dokumentów 
+* Filozofia "Docs as a Code"
 * Języki znaczników - AsciiDoc
 * Narzędzia i przykłady zastosowań
 * Podsumowanie
 
-// == Ja i dokumentacja
-
-// image::dunning-kruger-effect.png[width=800px]
-
-// +++<small>+++
-// źródło: respectfulinsolence.com
-// +++</small>+++
-
-// [.notes]
-// ****
-// * trzy słowa o mnie jako ekspercie od dokumentacji
-// ****
-
-== Dokument to
-
-treść + forma
-
-image::cont_plus_design.png[alt text,width=400px]
-
-[%notitle]
-=== treść vs forma 
-
-treść:
-
-image::dilbert_tresc.gif[alt text,width=600px]
-
-forma:
-
-image::dilbert_forma.gif[alt text,width=600px]
-
-[.notes]
-****
-* dobrze rozumieć i utrzymywać te dwie rzeczy niezależnie
-* bo często zajmują się tym inni ludzie
-* i dobrze jak ktoś kto tworzy treść nie przejmuje się "formatowaniem"
-* i odwrotnie...
-****
-
-//=== Treść 
-
-//Ważna jest treść
-//* ...
-
-//image::dilbert_tresc.gif[alt text,width=800px]
-
-// == Po co dokumentacja w korporacji?
-
-// +++
-// <p class="fragment fade-in"> dla pieniędzy
-// +++
-// [%notitle]
-// == (moja) Definicja dokumentacji w firmie
-// Dokumentacja firmowa:
-// Informacje spisane w określonej formie w celu zwiększenia dochodowości
-
-// image::geek-and-poke-audit-coming.jpg[width=300px]
-
-// [.notes]
-// ****
-// * jaki biznes takie dokumenty...
-// * moja Definicja: Informacje spisane w określonej formie w celu zwiększenia dochodowości
-// ****
-
-== Moje Doświadczenia
+== Doświadczenia
 
 [%notitle]
 === Moje doświadczenia 
@@ -116,6 +53,11 @@ image::indiana.jpg[alt text,width=400px]
 +++<small>+++
 źródło: Raiders of the Lost Ark (1981)
 +++</small>+++
+
+[%notitle]
+=== scenariusz ...
+
+image::project_doc_scenario.png[alt text,width=800px]
 
 [.notes]
 ****
@@ -177,7 +119,7 @@ dokumentacja jest:
 === Opinia Programistów
 
 +++<div class="left">+++
-+++<p align="left>Documentation is</p>+++
+		+++<p><b>Documentation is...</b></p>+++
 		+++<ul>+++
 			+++<li><p>Simply duplication</p></li>+++
 			+++<li><p>Hard to keep up to date</p></li>+++
@@ -314,19 +256,17 @@ image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 == Lekkie Języki Znaczników
 Lightweight Markup Languages
 
+Prostą (ludzką) składnią potrafią zdefinioać treść, nadać strukturę i układ tekstu a także go udekorować.
+
 [.notes]
 ****
 * kiedyś TeX and LaTeX, potem HTML, XML
-* potrafią:
-* Zdefiniować treść
-* Nadać strukturę tekstu
-* Opisać układ tekstu
-* Udekorować do
 ****
 
 [%notitle]
 === GITHUB i języki znaczników
-+++<a href="https://github.com/Pirgos/ex_markup_languages" target="_blank">Języki znaczników wspierane przez GITHUB:</a>+++
+Języki znaczników wspierane przez 
++++<a href="https://github.com/Pirgos/ex_markup_languages" target="_blank">GitHub:</a>+++
 
 * AsciiDoc
 * Creole 
@@ -347,8 +287,8 @@ kliknąć - pokazać
 
 == ASCIIDOC
 +++<blockquote>+++
-Use AsciiDoc for document markup. Really. 
-It’s actually readable by humans, easier to parse and way more flexible than XML.
+"Use AsciiDoc for document markup. Really. 
+It’s actually readable by humans, easier to parse and way more flexible than XML."
 +++</blockquote>+++
 
 _Linus_ _Torvalds_
@@ -366,14 +306,8 @@ image::asciidoc_sample.png[alt text,width=800px]
 [%notitle,background-iframe="./html/paragraph.html"]
 === Akapity
 
-// [%notitle,background-iframe="./html/lists.html"]
-// === Listy
-
 [%notitle,background-iframe="./html/format.html"]
 === Formatowanie
-
-// [%notitle,background-iframe="./html/tabel.html"]
-// === Tabela
 
 [%notitle,background-iframe="./html/source.html"]
 === Kod
@@ -418,8 +352,6 @@ image::vim.gif[alt text,width=600px]
 ASCIIDOC tylko składnia
 ****
 
-
-
 //image::asciidoctor.png[alt text,width=600px]
 
 [%notitle]
@@ -433,23 +365,20 @@ ASCIIDOCTOR może konwertować do:
 * DocBook 5 (lub 4.5) 
 * i inne formaty
 
-[%notitle]
 === plantuml
 
 image::plantuml_sd.png[alt text,width=800px]
 
-[%notitle]
 === ditaa
 
-image::ditaa.png[alt text,width=800px]
+image::ditaa_ascii_art.png[alt text,width=800px]
 
-[%notitle]
-=== tree
+// [%notitle]
+// === tree
 
-image::tree.png[alt text,width=800px]
+// image::tree.png[alt text,width=800px]
 
-[%notitle]
-=== tree
+=== chart
 
 image::pie.png[alt text,width=800px]
 
@@ -475,14 +404,13 @@ używa TOMTOM
 
 
 
-== ANTORA 
-
+//== ANTORA 
 //open source multi-repo static site generator
 
 [%notitle,background-iframe="https://antora.org/"]
 === Antora
 
-=== Przykład dokumentacji opartej na Antora
+=== Antora - Przykład dokumentacji 
  
 +++<a href="https://docs.fedoraproject.org/en-US/docs/" target="_blank">Fedora Documentation</a>+++
 
@@ -493,8 +421,9 @@ kliknąć - w edycję
 ****
 
 
-== "Docs as a code" w świecie IT
-
+== "Docs as a code" 
+w wielkim świecie IT
+ 
 == Microsoft - docs.microsoft.com
 
 [%notitle]
@@ -509,19 +438,6 @@ image::ms_github.gif[alt text,width=800px]
 też zaimplementowali  podejście "dos as a code", w oparciu o github
 migration of all .NET Framework documentation from MSDN to docs.microsoft.com
 ****
-
-// [%notitle]
-// === web_editing
-
-// wykonali migrację dokumentacji .NET Framework z MSDN do docs.microsoft.com
-
-// image::ms_net-apib.gif[alt text,width=600px]
-
-// [.notes]
-// ****
-
-// ****
-
 
 [%notitle, background-video="https://sec.ch9.ms/ch9/2637/370af848-96aa-49c4-8ffe-cb1753b32637/ModernizingWindowsDocs_high.mp4",background-video-loop=false,background-video-muted=false]
 === ms video background
@@ -595,9 +511,30 @@ Pomijając kwestie merytoryczne to technicznie można założyć
 
 [%notitle]
 === które kształtują świadomość
+korzyści techniczne:
+
 narzędzia kształtują świadomość 
 
 _First_ _tooling_, _then_ _culture_
+
+// [%notitle]
+// == Dokument to
+
+// treść i forma
+
+// image::cont_plus_design.png[alt text,width=400px]
+
+// [.notes]
+// ****
+// * dobrze rozumieć i utrzymywać te dwie rzeczy niezależnie
+// * bo często zajmują się tym inni ludzie
+// * ktoś kto tworzy treść nie przejmuje się "formatowaniem"
+// * backend & fronted 
+// * lużno połączone
+// * reużywalne
+// * wymienialne 
+// ****
+
 
 == Linki
 
@@ -608,5 +545,8 @@ _First_ _tooling_, _then_ _culture_
 * https://antora.org/
 
 
-//https://www.youtube.com/watch?v=Yh8QOc3rbaQ
 == Koniec
+
+//to do add url
+
+image::dilbert_tresc.gif[alt text,width=800px]
