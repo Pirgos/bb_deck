@@ -256,7 +256,11 @@ image::geek-and-poke-look-like-perl.jpg[alt text,width=400px]
 == Lekkie Języki Znaczników
 Lightweight Markup Languages
 
-Prostą (ludzką) składnią potrafią zdefinioać treść, nadać strukturę i układ tekstu a także go udekorować.
+Prostą składnią potrafią:
+
+* zdefinioać treść
+* nadać strukturę i układ tekstu
+* udekorować go
 
 [.notes]
 ****
@@ -511,7 +515,7 @@ Pomijając kwestie merytoryczne to technicznie można założyć
 
 [%notitle]
 === które kształtują świadomość
-korzyści techniczne:
+korzyści mentalne:
 
 narzędzia kształtują świadomość 
 
