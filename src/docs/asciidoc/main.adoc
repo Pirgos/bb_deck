@@ -14,6 +14,13 @@
     
 = Brownbag: Dokumentacja pisana tekstem
 
+[.notes]
+****
+* przedstawić się
+* dlaczego taki temat
+* i dlaczego nie w powerpoint - przeprosić
+****
+
 == Agenda
 
 * Kilka truizmów o dokumentacji 
@@ -40,6 +47,19 @@
 
 treść + forma
 
+image::cont_plus_design.png[alt text,width=400px]
+
+[%notitle]
+=== treść vs forma 
+
+treść:
+
+image::dilbert_tresc.gif[alt text,width=600px]
+
+forma:
+
+image::dilbert_forma.gif[alt text,width=600px]
+
 [.notes]
 ****
 * dobrze rozumieć i utrzymywać te dwie rzeczy niezależnie
@@ -47,8 +67,6 @@ treść + forma
 * i dobrze jak ktoś kto tworzy treść nie przejmuje się "formatowaniem"
 * i odwrotnie...
 ****
-
-image::cont_plus_design.png[alt text,width=400px]
 
 //=== Treść 
 
@@ -91,7 +109,7 @@ image::g&p_new_developer.jpg[alt text,width=350px]
 
 [%notitle]
 === Moje doświadczenia
-Archeologia 
+Archeologia - szukanie treści
 
 image::indiana.jpg[alt text,width=400px]
 
@@ -207,7 +225,6 @@ image::02_doc_flow.png[alt text,width=400px]
 ****
 * trzeba współtworzyć, a to oznacza że trzeba scalać pracę 
 ****
-
 
 [%notitle]
 === recenzent 
@@ -330,6 +347,13 @@ It’s actually readable by humans, easier to parse and way more flexible than X
 
 _Linus_ _Torvalds_
 
+
+=== Asciidoc składnia
+
+[%notitle"]
+=== dokument 
+image::asciidoc_sample.png[alt text,width=800px]
+
 [%notitle,background-iframe="./html/sections.html"]
 === Sekcje
 
@@ -359,6 +383,13 @@ AsciiDoc support for Visual Studio Code:
 
 image::vsc.gif[alt text,width=600px]
 
+[%notitle]
+=== Edytory
+
+vim:
+
+image::vim.gif[alt text,width=600px]
+
 // [%notitle]
 // === Edytory
 
@@ -367,7 +398,7 @@ image::vsc.gif[alt text,width=600px]
 // image::vim.giff[alt text,width=300px]
 
 
-=== Przykład dokumentacji w ASCIIDOC
+=== Przykład dokumentu w ASCIIDOC
 
 +++<a href="http://docs.groovy-lang.org/next/html/documentation/" target="_blank">Groovy Language Documentation</a>+++
 
@@ -396,15 +427,32 @@ ASCIIDOCTOR może konwertować do:
 * DocBook 5 (lub 4.5) 
 * i inne formaty
 
-=== Przykłady
-TODO
+[%notitle]
+=== plantuml
 
-//todo przykłady grafów, plantuml, 
-
-
-== docToolchain 
+image::plantuml_sd.png[alt text,width=800px]
 
 [%notitle]
+=== ditaa
+
+image::ditaa.png[alt text,width=800px]
+
+[%notitle]
+=== tree
+
+image::tree.png[alt text,width=800px]
+
+[%notitle]
+=== tree
+
+image::pie.png[alt text,width=800px]
+
+
+== NARZĘDZIA 
+
+//== docToolchain 
+
+//[%notitle]
 === docToolchain 
 
 image::docToolchain.png[alt text,width=800px]
@@ -423,7 +471,7 @@ używa TOMTOM
 
 == ANTORA 
 
-open source multi-repo static site generator
+//open source multi-repo static site generator
 
 [%notitle,background-iframe="https://antora.org/"]
 === Antora
@@ -432,10 +480,14 @@ open source multi-repo static site generator
  
 +++<a href="https://docs.fedoraproject.org/en-US/docs/" target="_blank">Fedora Documentation</a>+++
 
+
 [.notes]
 ****
 kliknąć - w edycję 
 ****
+
+
+== "Docs as a code" w świecie IT
 
 == Microsoft - docs.microsoft.com
 
@@ -444,7 +496,7 @@ kliknąć - w edycję
 
 w oparciu o GitHub:
 
-image::ms_github.gif[alt text,width=600px]
+image::ms_github.gif[alt text,width=800px]
 
 [.notes]
 ****
@@ -471,7 +523,6 @@ migration of all .NET Framework documentation from MSDN to docs.microsoft.com
 ****
 Film prezentujący jak to wygląda w praktyce
 ****
-
 
 == Google - success story 
 
@@ -521,7 +572,7 @@ image::google_stats.png[alt text,width=800px]
 == Podsumowanie
 
 [%notitle]
-=== korzyści
+=== korzyści 
 korzyści techniczne:
 
 * łatwa w przeszukiwaniu
@@ -538,9 +589,9 @@ Pomijając kwestie merytoryczne to technicznie można założyć
 
 [%notitle]
 === które kształtują świadomość
-narzędzia kształtują świadomość...
+narzędzia kształtują świadomość 
 
-First tooling, then culture
+_First_ _tooling_, _then_ _culture_
 
 == Linki
 
@@ -549,3 +600,7 @@ First tooling, then culture
 * http://asciidoc.org/
 * https://doctoolchain.github.io/docToolchain/
 * https://antora.org/
+
+
+//https://www.youtube.com/watch?v=Yh8QOc3rbaQ
+== Koniec

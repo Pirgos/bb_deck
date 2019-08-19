@@ -1,0 +1,36 @@
+= Tytuł
+Firstname Lastname <author@cgi.com>
+1.0, 2019-08-19 , template
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+== Paragraf poziom 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nisl purus in. Posuere morbi leo urna molestie. 
+
+=== Paragraf poziom 2
+
+.lista
+* element 1
+** niżej 
+*** jeszcze niżej
+* element 2
+
+Etiam sit amet nisl purus in. Posuere morbi leo urna molestie. 
+
+==== Paragraf poziom 3
+
+.Tabelka przykładowa
+|===
+|Nagłówek 1 |Nagłówek 2
+
+|Kolumna 1, rząd 1
+|Kolumna 2, rząd 1
+
+|Kolumna 1, rząd 2
+|Kolumna 2, rząd 2
+|===
+
+== Paragraf poziom 1
+
+TIP: A tu jakaś podpowiedź.
