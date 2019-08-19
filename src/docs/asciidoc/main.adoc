@@ -176,15 +176,21 @@ dokumentacja jest:
 
 === Opinia Programistów
 
-Documentation is...:
++++<div class="left">+++
++++<p align="left>Documentation is</p>+++
+		+++<ul>+++
+			+++<li><p>Simply duplication</p></li>+++
+			+++<li><p>Hard to keep up to date</p></li>+++
+			+++<li><p>Inefficient</p></li>+++
+			+++<li><p>Tedious</p></li>+++
+		+++</ul>+++
++++</div>+++
 
---
-//[%step]
-* Simply duplication
-* Hard to keep up to date
-* Inefficient
-* Tedious
---
++++<div class="right">+++
++++<img src="./images/just_read_doc.png">+++
++++</div>+++
+
+
 
 +++<small>+++
 źródło: https://www.slideshare.net/AlexFernandez58/death-to-project-documentation-with-extreme-programming
