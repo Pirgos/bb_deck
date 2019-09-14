@@ -529,6 +529,6 @@ _First_ _tooling_, _then_ _culture_
 
 == Koniec
 
-http://bit.ly/doc-brownbag
+https://pirgos.github.io/bb_deck/main.html
 
 image::dilbert_tresc.gif[alt text,width=800px]
